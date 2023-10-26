@@ -1,0 +1,1 @@
+int raw detector_quant 0x7f140001

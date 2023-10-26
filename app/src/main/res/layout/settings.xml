@@ -1,0 +1,1816 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/ScrollView">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_ver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="Horizontal FOV: "
+            android:id="@+id/tw_horizontalFov"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_horizontalFov"
+            android:layout_alignBottom="@+id/et_horizontalFov" />
+        <EditText
+            android:id="@+id/et_horizontalFov"
+            android:inputType="numberDecimal"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_horizontalFov"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="Vertical FOV: "
+            android:id="@+id/tw_verticalFov"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_verticalFov"
+            android:layout_alignBottom="@+id/et_verticalFov" />
+        <EditText
+            android:id="@+id/et_verticalFov"
+            android:inputType="numberDecimal"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_verticalFov"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <Switch android:text="Autocalibration: "
+        android:id="@+id/sw_autocalibration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="Autocalib Min Speed (10..200): "
+            android:id="@+id/tw_autoCalibMinSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_autoCalibMinSpeed"
+            android:layout_alignBottom="@+id/et_autoCalibMinSpeed" />
+        <EditText
+            android:id="@+id/et_autoCalibMinSpeed"
+            android:inputType="numberDecimal"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_autoCalibMinSpeed"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="Hood Level (0..100): "
+            android:id="@+id/tw_hoodLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_hoodLevel"
+            android:layout_alignBottom="@+id/et_hoodLevel" />
+        <EditText
+            android:id="@+id/et_hoodLevel"
+            android:inputType="numberDecimal"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_hoodLevel"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="Horizon Level (0..100): "
+            android:id="@+id/tw_horizonLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_horizonLevel"
+            android:layout_alignBottom="@+id/et_horizonLevel" />
+        <EditText
+            android:id="@+id/et_horizonLevel"
+            android:inputType="numberDecimal"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_horizonLevel"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="Horizontal Pan (0..100): "
+            android:id="@+id/tw_horizontalPan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_horizontalPan"
+            android:layout_alignBottom="@+id/et_horizontalPan" />
+        <EditText
+            android:id="@+id/et_horizontalPan"
+            android:inputType="numberDecimal"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_horizontalPan"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="Cam Mount Ht, m (0.5..3): "
+            android:id="@+id/tw_cameraMountHeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_cameraMountHeight"
+            android:layout_alignBottom="@+id/et_cameraMountHeight" />
+        <EditText
+            android:id="@+id/et_cameraMountHeight"
+            android:inputType="numberDecimal"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_cameraMountHeight"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="Lane Width, m (2..5): "
+            android:id="@+id/tw_laneWidth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_laneWidth"
+            android:layout_alignBottom="@+id/et_laneWidth" />
+        <EditText
+            android:id="@+id/et_laneWidth"
+            android:inputType="numberDecimal"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_laneWidth"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="Min Distance, m (1..10): "
+            android:id="@+id/tw_minDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_minDistance"
+            android:layout_alignBottom="@+id/et_minDistance" />
+        <EditText
+            android:id="@+id/et_minDistance"
+            android:inputType="numberDecimal"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_minDistance"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <Switch android:text="Use Wheels to Line Threshold: "
+        android:id="@+id/sw_useWheelsToLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="Left Wheel2Cam Dist, m (0..3): "
+            android:id="@+id/tw_distToLeftWheel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_distToLeftWheel"
+            android:layout_alignBottom="@+id/et_distToLeftWheel" />
+        <EditText
+            android:id="@+id/et_distToLeftWheel"
+            android:inputType="numberDecimal"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_distToLeftWheel"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="Right Wheel2Cam Dist, m (0..3): "
+            android:id="@+id/tw_distToRightWheel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_distToRightWheel"
+            android:layout_alignBottom="@+id/et_distToRightWheel" />
+        <EditText
+            android:id="@+id/et_distToRightWheel"
+            android:inputType="numberDecimal"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_distToRightWheel"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="Left Wheel2Line Thresh, m (-1..1): "
+            android:id="@+id/tw_distLeftThreshold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_distLeftThreshold"
+            android:layout_alignBottom="@+id/et_distLeftThreshold" />
+        <EditText
+            android:id="@+id/et_distLeftThreshold"
+            android:inputType="numberDecimal|numberSigned"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_distLeftThreshold"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="Right Wheel2Line Thresh, m (-1..1): "
+            android:id="@+id/tw_distRightThreshold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_distRightThreshold"
+            android:layout_alignBottom="@+id/et_distRightThreshold" />
+        <EditText
+            android:id="@+id/et_distRightThreshold"
+            android:inputType="numberDecimal|numberSigned"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_distRightThreshold"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <Switch android:text="Deviation: "
+        android:id="@+id/sw_deviation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <Switch android:text="Autodeviation: "
+        android:id="@+id/sw_autodeviation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="Lane Change Dist Thresh, m (0..2): "
+            android:id="@+id/tw_laneChangeDistanceThreshold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_laneChangeDistanceThreshold"
+            android:layout_alignBottom="@+id/et_laneChangeDistanceThreshold" />
+        <EditText
+            android:id="@+id/et_laneChangeDistanceThreshold"
+            android:inputType="numberDecimal"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_laneChangeDistanceThreshold"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="Min Deviation Duration, sec (0..5): "
+            android:id="@+id/tw_minDeviationDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_minDeviationDuration"
+            android:layout_alignBottom="@+id/et_minDeviationDuration" />
+        <EditText
+            android:id="@+id/et_minDeviationDuration"
+            android:inputType="numberDecimal"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_minDeviationDuration"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="Deviation Event Gap, sec (0..600): "
+            android:id="@+id/tw_minDurationBetweenDeviationEvents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_minDurationBetweenDeviationEvents"
+            android:layout_alignBottom="@+id/et_minDurationBetweenDeviationEvents" />
+        <EditText
+            android:id="@+id/et_minDurationBetweenDeviationEvents"
+            android:inputType="numberDecimal"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_minDurationBetweenDeviationEvents"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="Line Classifier Type (0-None, 1-Fast, 2-Std): "
+            android:id="@+id/tw_lineClassifierType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_lineClassifierType"
+            android:layout_alignBottom="@+id/et_lineClassifierType" />
+        <EditText
+            android:id="@+id/et_lineClassifierType"
+            android:inputType="number"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_lineClassifierType"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <Switch android:text="Solid Only: "
+        android:id="@+id/sw_solidOnly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="Veh Detector Type (0-Adv, 1-Prem): "
+            android:id="@+id/tw_vehicleDetectorType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_vehicleDetectorType"
+            android:layout_alignBottom="@+id/et_vehicleDetectorType" />
+        <EditText
+            android:id="@+id/et_vehicleDetectorType"
+            android:inputType="number"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_vehicleDetectorType"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="Veh Detector Score Thresh (1..100): "
+            android:id="@+id/tw_vdScoreThreshold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_vdScoreThreshold"
+            android:layout_alignBottom="@+id/et_vdScoreThreshold" />
+        <EditText
+            android:id="@+id/et_vdScoreThreshold"
+            android:inputType="numberDecimal"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_vdScoreThreshold"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="Traffic Lights Score Thresh (1..100): "
+            android:id="@+id/tw_vdTrafficLightScoreThreshold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_vdTrafficLightScoreThreshold"
+            android:layout_alignBottom="@+id/et_vdTrafficLightScoreThreshold" />
+        <EditText
+            android:id="@+id/et_vdTrafficLightScoreThreshold"
+            android:inputType="numberDecimal"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_vdTrafficLightScoreThreshold"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <Switch android:text="Rolling Stop: "
+        android:id="@+id/sw_enableRs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="Rolling Stop Min Speed (1..200): "
+            android:id="@+id/tw_rsMinSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_rsMinSpeed"
+            android:layout_alignBottom="@+id/et_rsMinSpeed" />
+        <EditText
+            android:id="@+id/et_rsMinSpeed"
+            android:inputType="numberDecimal"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_rsMinSpeed"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="Rolling Stop Event Gap, sec (0..600): "
+            android:id="@+id/tw_rsMinDurationBetweenEvents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_rsMinDurationBetweenEvents"
+            android:layout_alignBottom="@+id/et_rsMinDurationBetweenEvents" />
+        <EditText
+            android:id="@+id/et_rsMinDurationBetweenEvents"
+            android:inputType="numberDecimal"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_rsMinDurationBetweenEvents"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="Rolling Stop Score Thresh (1..100): "
+            android:id="@+id/tw_rsScoreThreshold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_rsScoreThreshold"
+            android:layout_alignBottom="@+id/et_rsScoreThreshold" />
+        <EditText
+            android:id="@+id/et_rsScoreThreshold"
+            android:inputType="numberDecimal"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_rsScoreThreshold"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="Veh Detector Device (0-CPU, 1-GPU): "
+            android:id="@+id/tw_vdDevice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_vdDevice"
+            android:layout_alignBottom="@+id/et_vdDevice" />
+        <EditText
+            android:id="@+id/et_vdDevice"
+            android:inputType="number"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_vdDevice"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="Veh Detector Num Threads (1..8): "
+            android:id="@+id/tw_vdNumThreads"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_vdNumThreads"
+            android:layout_alignBottom="@+id/et_vdNumThreads" />
+        <EditText
+            android:id="@+id/et_vdNumThreads"
+            android:inputType="number"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_vdNumThreads"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="Veh Detector CPU Usage (0..2): "
+            android:id="@+id/tw_vdCpuUsageLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_vdCpuUsageLevel"
+            android:layout_alignBottom="@+id/et_vdCpuUsageLevel" />
+        <EditText
+            android:id="@+id/et_vdCpuUsageLevel"
+            android:inputType="number"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_vdCpuUsageLevel"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="Tailgating Min Speed (10..200): "
+            android:id="@+id/tw_tgMinSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_tgMinSpeed"
+            android:layout_alignBottom="@+id/et_tgMinSpeed" />
+        <EditText
+            android:id="@+id/et_tgMinSpeed"
+            android:inputType="numberDecimal"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_tgMinSpeed"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="Tailgating Sensitivity (0..11): "
+            android:id="@+id/tw_tgSensitivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_tgSensitivity"
+            android:layout_alignBottom="@+id/et_tgSensitivity" />
+        <EditText
+            android:id="@+id/et_tgSensitivity"
+            android:inputType="number"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_tgSensitivity"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="Tailgating Night Sensitivity (0..11): "
+            android:id="@+id/tw_tgNightSensitivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_tgNightSensitivity"
+            android:layout_alignBottom="@+id/et_tgNightSensitivity" />
+        <EditText
+            android:id="@+id/et_tgNightSensitivity"
+            android:inputType="number"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_tgNightSensitivity"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="Tailgating Min Duration (1..60): "
+            android:id="@+id/tw_tgMinDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_tgMinDuration"
+            android:layout_alignBottom="@+id/et_tgMinDuration" />
+        <EditText
+            android:id="@+id/et_tgMinDuration"
+            android:inputType="numberDecimal"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_tgMinDuration"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="Tailgate Event Gap (0..600): "
+            android:id="@+id/tw_tgMinDurationBetweenEvents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_tgMinDurationBetweenEvents"
+            android:layout_alignBottom="@+id/et_tgMinDurationBetweenEvents" />
+        <EditText
+            android:id="@+id/et_tgMinDurationBetweenEvents"
+            android:inputType="numberDecimal"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_tgMinDurationBetweenEvents"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="FCW2 Min Speed (10..200): "
+            android:id="@+id/tw_fcw2MinSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_fcw2MinSpeed"
+            android:layout_alignBottom="@+id/et_fcw2MinSpeed" />
+        <EditText
+            android:id="@+id/et_fcw2MinSpeed"
+            android:inputType="numberDecimal"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_fcw2MinSpeed"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="FCW2 Type (0-Headway, 1-TTC): "
+            android:id="@+id/tw_fcw2EventType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_fcw2EventType"
+            android:layout_alignBottom="@+id/et_fcw2EventType" />
+        <EditText
+            android:id="@+id/et_fcw2EventType"
+            android:inputType="number"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_fcw2EventType"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="FCW2 Sensitivity (0..11): "
+            android:id="@+id/tw_fcw2Sensitivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_fcw2Sensitivity"
+            android:layout_alignBottom="@+id/et_fcw2Sensitivity" />
+        <EditText
+            android:id="@+id/et_fcw2Sensitivity"
+            android:inputType="number"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_fcw2Sensitivity"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="FCW2 Night Sensitivity (0..11): "
+            android:id="@+id/tw_fcw2NightSensitivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_fcw2NightSensitivity"
+            android:layout_alignBottom="@+id/et_fcw2NightSensitivity" />
+        <EditText
+            android:id="@+id/et_fcw2NightSensitivity"
+            android:inputType="number"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_fcw2NightSensitivity"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="FCW2 Event Gap (0..600): "
+            android:id="@+id/tw_fcw2MinDurationBetweenEvents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_fcw2MinDurationBetweenEvents"
+            android:layout_alignBottom="@+id/et_fcw2MinDurationBetweenEvents" />
+        <EditText
+            android:id="@+id/et_fcw2MinDurationBetweenEvents"
+            android:inputType="numberDecimal"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_fcw2MinDurationBetweenEvents"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="FCW2 Min Dist Decrease (1..30): "
+            android:id="@+id/tw_fcw2MinDistanceDecrease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_fcw2MinDistanceDecrease"
+            android:layout_alignBottom="@+id/et_fcw2MinDistanceDecrease" />
+        <EditText
+            android:id="@+id/et_fcw2MinDistanceDecrease"
+            android:inputType="numberDecimal"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_fcw2MinDistanceDecrease"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="FCW2 Max Current Dist (1..30): "
+            android:id="@+id/tw_fcw2MaxCurrentDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_fcw2MaxCurrentDistance"
+            android:layout_alignBottom="@+id/et_fcw2MaxCurrentDistance" />
+        <EditText
+            android:id="@+id/et_fcw2MaxCurrentDistance"
+            android:inputType="numberDecimal"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_fcw2MaxCurrentDistance"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="SnG Sensitivity (0..11): "
+            android:id="@+id/tw_sngSensitivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_sngSensitivity"
+            android:layout_alignBottom="@+id/et_sngSensitivity" />
+        <EditText
+            android:id="@+id/et_sngSensitivity"
+            android:inputType="number"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_sngSensitivity"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="SnG Min Duration (0..10): "
+            android:id="@+id/tw_sngMinDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_sngMinDuration"
+            android:layout_alignBottom="@+id/et_sngMinDuration" />
+        <EditText
+            android:id="@+id/et_sngMinDuration"
+            android:inputType="numberDecimal"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_sngMinDuration"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <Switch android:text="Speed Limit: "
+        android:id="@+id/sw_enableSpeedLimit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="SL Duration, sec (0..60): "
+            android:id="@+id/tw_slDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_slDuration"
+            android:layout_alignBottom="@+id/et_slDuration" />
+        <EditText
+            android:id="@+id/et_slDuration"
+            android:inputType="numberDecimal"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_slDuration"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="SL Event Gap, sec (0..600): "
+            android:id="@+id/tw_slMinDurationBetweenEvents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_slMinDurationBetweenEvents"
+            android:layout_alignBottom="@+id/et_slMinDurationBetweenEvents" />
+        <EditText
+            android:id="@+id/et_slMinDurationBetweenEvents"
+            android:inputType="numberDecimal"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_slMinDurationBetweenEvents"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="SL Det Score Thresh (0..100): "
+            android:id="@+id/tw_slDetScoreThreshold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_slDetScoreThreshold"
+            android:layout_alignBottom="@+id/et_slDetScoreThreshold" />
+        <EditText
+            android:id="@+id/et_slDetScoreThreshold"
+            android:inputType="numberDecimal"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_slDetScoreThreshold"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="SL Rec Score Thresh (-100..100): "
+            android:id="@+id/tw_slRecScoreThreshold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_slRecScoreThreshold"
+            android:layout_alignBottom="@+id/et_slRecScoreThreshold" />
+        <EditText
+            android:id="@+id/et_slRecScoreThreshold"
+            android:inputType="numberDecimal"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_slRecScoreThreshold"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <TextView
+        android:id="@+id/tw_slRoiHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SL ROI:"
+        android:textColor="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tw_slRoiX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/et_slRoiX"
+            android:layout_alignBottom="@+id/et_slRoiX"
+            android:text="X: "
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/et_slRoiX"
+            android:inputType="numberDecimal"
+            android:layout_width="45sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_slRoiX"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/tw_slRoiY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/et_slRoiX"
+            android:layout_alignBaseline="@+id/et_slRoiY"
+            android:layout_alignBottom="@+id/et_slRoiY"
+            android:text="Y: "
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/et_slRoiY"
+            android:inputType="numberDecimal"
+            android:layout_width="45sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_slRoiY"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/tw_slRoiWidth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/et_slRoiY"
+            android:layout_alignBaseline="@+id/et_slRoiWidth"
+            android:layout_alignBottom="@+id/et_slRoiWidth"
+            android:text="W: "
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/et_slRoiWidth"
+            android:inputType="numberDecimal"
+            android:layout_width="45sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_slRoiWidth"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/tw_slRoiHeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/et_slRoiWidth"
+            android:layout_alignBaseline="@+id/et_slRoiHeight"
+            android:layout_alignBottom="@+id/et_slRoiHeight"
+            android:text="H: "
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/et_slRoiHeight"
+            android:inputType="numberDecimal"
+            android:layout_width="45sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_slRoiHeight"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <Switch android:text="PCW: "
+        android:id="@+id/sw_enablePcw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="PCW Min Speed (0..200): "
+            android:id="@+id/tw_pcwMinSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_pcwMinSpeed"
+            android:layout_alignBottom="@+id/et_pcwMinSpeed" />
+        <EditText
+            android:id="@+id/et_pcwMinSpeed"
+            android:inputType="numberDecimal"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_pcwMinSpeed"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="PCW Max Speed (0..200): "
+            android:id="@+id/tw_pcwMaxSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_pcwMaxSpeed"
+            android:layout_alignBottom="@+id/et_pcwMaxSpeed" />
+        <EditText
+            android:id="@+id/et_pcwMaxSpeed"
+            android:inputType="numberDecimal"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_pcwMaxSpeed"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <TextView
+        android:id="@+id/tw_pcwRoiHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PCW ROI:"
+        android:textColor="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tw_pcwRoiX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/et_pcwRoiX"
+            android:layout_alignBottom="@+id/et_pcwRoiX"
+            android:text="X: "
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/et_pcwRoiX"
+            android:inputType="numberDecimal"
+            android:layout_width="45sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_pcwRoiX"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/tw_pcwRoiY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/et_pcwRoiX"
+            android:layout_alignBaseline="@+id/et_pcwRoiY"
+            android:layout_alignBottom="@+id/et_pcwRoiY"
+            android:text="Y: "
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/et_pcwRoiY"
+            android:inputType="numberDecimal"
+            android:layout_width="45sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_pcwRoiY"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/tw_pcwRoiWidth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/et_pcwRoiY"
+            android:layout_alignBaseline="@+id/et_pcwRoiWidth"
+            android:layout_alignBottom="@+id/et_pcwRoiWidth"
+            android:text="W: "
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/et_pcwRoiWidth"
+            android:inputType="numberDecimal"
+            android:layout_width="45sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_pcwRoiWidth"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/tw_pcwRoiHeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/et_pcwRoiWidth"
+            android:layout_alignBaseline="@+id/et_pcwRoiHeight"
+            android:layout_alignBottom="@+id/et_pcwRoiHeight"
+            android:text="H: "
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/et_pcwRoiHeight"
+            android:inputType="numberDecimal"
+            android:layout_width="45sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_pcwRoiHeight"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <Switch android:text="PCW Event ROI: "
+        android:id="@+id/sw_pcwUseEventRoi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <TextView
+        android:id="@+id/tw_pcwEventRoi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PCW Event ROI Offsets, m (-1..2):"
+        android:textColor="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tw_pcwEventRoiLeftOffset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/et_pcwEventRoiLeftOffset"
+            android:layout_alignBottom="@+id/et_pcwEventRoiLeftOffset"
+            android:text="Left: "
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/et_pcwEventRoiLeftOffset"
+            android:inputType="numberDecimal|numberSigned"
+            android:layout_width="45sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_pcwEventRoiLeftOffset"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/tw_pcwEventRoiRightOffset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/et_pcwEventRoiLeftOffset"
+            android:layout_alignBaseline="@+id/et_pcwEventRoiRightOffset"
+            android:layout_alignBottom="@+id/et_pcwEventRoiRightOffset"
+            android:text="Right: "
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/et_pcwEventRoiRightOffset"
+            android:inputType="numberDecimal|numberSigned"
+            android:layout_width="45sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_pcwEventRoiRightOffset"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="PCW Event Gap, sec (0..600): "
+            android:id="@+id/tw_pcwMinDurationBetweenEvents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_pcwMinDurationBetweenEvents"
+            android:layout_alignBottom="@+id/et_pcwMinDurationBetweenEvents" />
+        <EditText
+            android:id="@+id/et_pcwMinDurationBetweenEvents"
+            android:inputType="numberDecimal"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_pcwMinDurationBetweenEvents"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="PCW Score Thresh (0..100): "
+            android:id="@+id/tw_pcwScoreThreshold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_pcwScoreThreshold"
+            android:layout_alignBottom="@+id/et_pcwScoreThreshold" />
+        <EditText
+            android:id="@+id/et_pcwScoreThreshold"
+            android:inputType="numberDecimal"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_pcwScoreThreshold"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="PCW Device (0-CPU, 1-GPU): "
+            android:id="@+id/tw_pcwDevice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_pcwDevice"
+            android:layout_alignBottom="@+id/et_pcwDevice" />
+        <EditText
+            android:id="@+id/et_pcwDevice"
+            android:inputType="number"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_pcwDevice"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="PCW Max Frame Rate (0.1..30): "
+            android:id="@+id/tw_pcwMaxFrameRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_pcwMaxFrameRate"
+            android:layout_alignBottom="@+id/et_pcwMaxFrameRate" />
+        <EditText
+            android:id="@+id/et_pcwMaxFrameRate"
+            android:inputType="numberDecimal"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_pcwMaxFrameRate"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <Switch android:text="FCW2 Output: "
+        android:id="@+id/sw_fcw2Output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <Switch android:text="Tailgating Output: "
+        android:id="@+id/sw_tgOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <Switch android:text="Traffic Lights Output: "
+        android:id="@+id/sw_trafficLightsOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <Switch android:text="Stop and Go: "
+        android:id="@+id/sw_enableSng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <Switch android:text="Sound: "
+        android:id="@+id/sw_playSound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="Speed (0..200): "
+            android:id="@+id/tw_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_speed"
+            android:layout_alignBottom="@+id/et_speed" />
+        <EditText
+            android:id="@+id/et_speed"
+            android:inputType="numberDecimal"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_speed"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="Width (320..1920): "
+            android:id="@+id/tw_width"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_width"
+            android:layout_alignBottom="@+id/et_width" />
+        <EditText
+            android:id="@+id/et_width"
+            android:inputType="number"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_width"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="Height (240..1080): "
+            android:id="@+id/tw_height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_height"
+            android:layout_alignBottom="@+id/et_height" />
+        <EditText
+            android:id="@+id/et_height"
+            android:inputType="number"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_height"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <Switch android:text="Reverse Landscape: "
+        android:id="@+id/sw_reverseLandscape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="Video File Size, MB: "
+            android:id="@+id/tw_videoFileSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_videoFileSize"
+            android:layout_alignBottom="@+id/et_videoFileSize" />
+        <EditText
+            android:id="@+id/et_videoFileSize"
+            android:inputType="numberDecimal"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_videoFileSize"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="Font Scale %: "
+            android:id="@+id/tw_fontScalePerc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_fontScalePerc"
+            android:layout_alignBottom="@+id/et_fontScalePerc" />
+        <EditText
+            android:id="@+id/et_fontScalePerc"
+            android:inputType="numberDecimal"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_fontScalePerc"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:text="Obj Dump Gap, ms (0-disable): "
+            android:id="@+id/tw_dumpGap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/et_dumpGap"
+            android:layout_alignBottom="@+id/et_dumpGap" />
+        <EditText
+            android:id="@+id/et_dumpGap"
+            android:inputType="number"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tw_dumpGap"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+</LinearLayout>
+</ScrollView>

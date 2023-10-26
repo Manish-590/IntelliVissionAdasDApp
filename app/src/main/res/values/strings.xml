@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Adas</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="app_label">ADAS</string>
+    <string name="title_activity_scr_main">Home</string>
+    <string name="dlg_title_confirmation">Confirmation</string>
+    <string name="dlg_title_warning">Warning</string>
+    <string name="msg_exit">Do you want to exit ADAS?</string>
+    <string name="msg_app_expiry">App reached expiry date, please contact Admin. </string>
+    <string name="msg_license_expiry">Your license is invalid or expired. </string>
+    <string name="msg_wifi_disabled">Please Turn ON your WiFi. </string>
+    <string name="dlg_btn_yes">Yes</string>
+    <string name="dlg_btn_no">No</string>
+    <string name="dlg_btn_ok">OK</string>
+    <string name="dlg_btn_cancel">Cancel</string>
+    <string name="title_activity_scr_temp">Temp</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_scr_setting">Settings</string>
+    <string name="title_activity_test">Test</string>
+    <string name="calibration_label">Calib: </string>
+    <string name="calibDeviation_label">DCalib: </string>
+    <string name="calibration_auto">Auto</string>
+    <string name="calibration_manual">Manual</string>
+    <string name="go">GO!</string>
+    <string name="fcw">FCW</string>
+    <string name="tg">TG</string>
+    <string name="rs">RS</string>
+    <string name="slv">V</string>
+    <string name="pcw">PCW</string>
+    <string name="ldw_left">&lt;&lt;&lt;</string>
+    <string name="ldw_right">&gt;&gt;&gt;</string>
+    <string name="processing_fps_label">FPS: </string>
+    <string name="processing_fps">N/A</string>
+    <string name="gpu_usage_label">GPU: </string>
+    <string name="gpu_usage">N/A</string>
+    <string name="demo_label">IntelliVision</string>
+
+    <string-array name="auto_calib">
+        <item>enable</item>
+        <item>disable</item>
+    </string-array>
+
+</resources>

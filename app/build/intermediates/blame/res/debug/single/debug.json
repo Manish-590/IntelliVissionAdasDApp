@@ -1,0 +1,218 @@
+[
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/raw_speed_limit_70.mp3.flat",
+        "source": "/Users/manishkumar/AdasApp/app/src/main/res/raw/speed_limit_70.mp3"
+    },
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/Users/manishkumar/AdasApp/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/Users/manishkumar/AdasApp/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/raw_violation_20.mp3.flat",
+        "source": "/Users/manishkumar/AdasApp/app/src/main/res/raw/violation_20.mp3"
+    },
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/raw_detector_quant.bin.flat",
+        "source": "/Users/manishkumar/AdasApp/ivadaswrapper/build/.transforms/78dab7def009e45ef328ed4b1d807d1c/res/raw/detector_quant.bin"
+    },
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/raw_speed_limit_55.mp3.flat",
+        "source": "/Users/manishkumar/AdasApp/app/src/main/res/raw/speed_limit_55.mp3"
+    },
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/raw_bstopsign.mp3.flat",
+        "source": "/Users/manishkumar/AdasApp/app/src/main/res/raw/bstopsign.mp3"
+    },
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/layout_main.xml.flat",
+        "source": "/Users/manishkumar/AdasApp/app/src/main/res/layout/main.xml"
+    },
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/drawable_ic_stop.xml.flat",
+        "source": "/Users/manishkumar/AdasApp/app/src/main/res/drawable/ic_stop.xml"
+    },
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/raw_speed_limit_10.mp3.flat",
+        "source": "/Users/manishkumar/AdasApp/app/src/main/res/raw/speed_limit_10.mp3"
+    },
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/raw_violation_50.mp3.flat",
+        "source": "/Users/manishkumar/AdasApp/app/src/main/res/raw/violation_50.mp3"
+    },
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/raw_speed_limit_25.mp3.flat",
+        "source": "/Users/manishkumar/AdasApp/app/src/main/res/raw/speed_limit_25.mp3"
+    },
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/raw_bldw.mp3.flat",
+        "source": "/Users/manishkumar/AdasApp/app/src/main/res/raw/bldw.mp3"
+    },
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/raw_btg.mp3.flat",
+        "source": "/Users/manishkumar/AdasApp/app/src/main/res/raw/btg.mp3"
+    },
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/manishkumar/AdasApp/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/raw_speed_limit_50.mp3.flat",
+        "source": "/Users/manishkumar/AdasApp/app/src/main/res/raw/speed_limit_50.mp3"
+    },
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/raw_speed_limit_65.mp3.flat",
+        "source": "/Users/manishkumar/AdasApp/app/src/main/res/raw/speed_limit_65.mp3"
+    },
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/raw_speed_limit_20.mp3.flat",
+        "source": "/Users/manishkumar/AdasApp/app/src/main/res/raw/speed_limit_20.mp3"
+    },
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/raw_violation_25.mp3.flat",
+        "source": "/Users/manishkumar/AdasApp/app/src/main/res/raw/violation_25.mp3"
+    },
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/manishkumar/AdasApp/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/raw_violation.mp3.flat",
+        "source": "/Users/manishkumar/AdasApp/app/src/main/res/raw/violation.mp3"
+    },
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/raw_violation_70.mp3.flat",
+        "source": "/Users/manishkumar/AdasApp/app/src/main/res/raw/violation_70.mp3"
+    },
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/raw_speed_limit_40.mp3.flat",
+        "source": "/Users/manishkumar/AdasApp/app/src/main/res/raw/speed_limit_40.mp3"
+    },
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/Users/manishkumar/AdasApp/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/raw_speed_limit_30.mp3.flat",
+        "source": "/Users/manishkumar/AdasApp/app/src/main/res/raw/speed_limit_30.mp3"
+    },
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/drawable_ic_record.xml.flat",
+        "source": "/Users/manishkumar/AdasApp/app/src/main/res/drawable/ic_record.xml"
+    },
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/raw_brollingstop.mp3.flat",
+        "source": "/Users/manishkumar/AdasApp/app/src/main/res/raw/brollingstop.mp3"
+    },
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/raw_violation_35.mp3.flat",
+        "source": "/Users/manishkumar/AdasApp/app/src/main/res/raw/violation_35.mp3"
+    },
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/Users/manishkumar/AdasApp/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/manishkumar/AdasApp/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/raw_bpedestrian.mp3.flat",
+        "source": "/Users/manishkumar/AdasApp/app/src/main/res/raw/bpedestrian.mp3"
+    },
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/layout_dlg_result.xml.flat",
+        "source": "/Users/manishkumar/AdasApp/app/src/main/res/layout/dlg_result.xml"
+    },
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/raw_btl.mp3.flat",
+        "source": "/Users/manishkumar/AdasApp/app/src/main/res/raw/btl.mp3"
+    },
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/raw_speed_limit_45.mp3.flat",
+        "source": "/Users/manishkumar/AdasApp/app/src/main/res/raw/speed_limit_45.mp3"
+    },
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/raw_violation_60.mp3.flat",
+        "source": "/Users/manishkumar/AdasApp/app/src/main/res/raw/violation_60.mp3"
+    },
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/raw_bfcw.mp3.flat",
+        "source": "/Users/manishkumar/AdasApp/app/src/main/res/raw/bfcw.mp3"
+    },
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/raw_speed_limit_15.mp3.flat",
+        "source": "/Users/manishkumar/AdasApp/app/src/main/res/raw/speed_limit_15.mp3"
+    },
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/raw_speed_limit_60.mp3.flat",
+        "source": "/Users/manishkumar/AdasApp/app/src/main/res/raw/speed_limit_60.mp3"
+    },
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/raw_violation_45.mp3.flat",
+        "source": "/Users/manishkumar/AdasApp/app/src/main/res/raw/violation_45.mp3"
+    },
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/Users/manishkumar/AdasApp/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/raw_speed_limit_unknown.mp3.flat",
+        "source": "/Users/manishkumar/AdasApp/app/src/main/res/raw/speed_limit_unknown.mp3"
+    },
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/raw_violation_15.mp3.flat",
+        "source": "/Users/manishkumar/AdasApp/app/src/main/res/raw/violation_15.mp3"
+    },
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/drawable_ic_settings_applications.xml.flat",
+        "source": "/Users/manishkumar/AdasApp/app/src/main/res/drawable/ic_settings_applications.xml"
+    },
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/layout_splash.xml.flat",
+        "source": "/Users/manishkumar/AdasApp/app/src/main/res/layout/splash.xml"
+    },
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/raw_bsng.mp3.flat",
+        "source": "/Users/manishkumar/AdasApp/app/src/main/res/raw/bsng.mp3"
+    },
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/raw_violation_55.mp3.flat",
+        "source": "/Users/manishkumar/AdasApp/app/src/main/res/raw/violation_55.mp3"
+    },
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/raw_violation_40.mp3.flat",
+        "source": "/Users/manishkumar/AdasApp/app/src/main/res/raw/violation_40.mp3"
+    },
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/raw_violation_10.mp3.flat",
+        "source": "/Users/manishkumar/AdasApp/app/src/main/res/raw/violation_10.mp3"
+    },
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/layout_settings.xml.flat",
+        "source": "/Users/manishkumar/AdasApp/app/src/main/res/layout/settings.xml"
+    },
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/Users/manishkumar/AdasApp/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/raw_speed_limit_35.mp3.flat",
+        "source": "/Users/manishkumar/AdasApp/app/src/main/res/raw/speed_limit_35.mp3"
+    },
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/Users/manishkumar/AdasApp/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/raw_violation_65.mp3.flat",
+        "source": "/Users/manishkumar/AdasApp/app/src/main/res/raw/violation_65.mp3"
+    },
+    {
+        "merged": "/Users/manishkumar/AdasApp/app/build/intermediates/res/merged/debug/raw_violation_30.mp3.flat",
+        "source": "/Users/manishkumar/AdasApp/app/src/main/res/raw/violation_30.mp3"
+    }
+]

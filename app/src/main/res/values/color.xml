@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="dark_gray">#3b3b3b</color>
+    <color name="separator_gray">#ced5d9</color>
+    <color name="gray_pressed">#212121</color>
+    <color name="blue">#1B3872</color>
+    <color name="blue_pressed">#6589c7</color>
+    <color name="red">#fb6c5e</color>
+    <color name="red_pressed">#d75a4e</color>
+    <color name="button_bg_color_gray">#ececec</color>
+    <color name="dark_separator">#292929</color>
+    <color name="blue_bright">#3399FF</color>
+    <color name="splash_background">#015696</color>
+    <color name="dark_blue">#2376b7</color>
+    <color name="green">#52813b</color>
+    <color name="product_info_text_color">#87962e</color>
+    <color name="red_1">#B03A2E</color>
+    <color name="blue_1">#2471A3</color>
+    <color name="blue_2">#1B4F72</color>
+    <color name="label">#FFFFFF</color>
+    <color name="shadow_color">#000000</color>
+    <color name="label_no_event">#FFFFFF00</color>
+    <color name="label_event">#FFFFFF00</color>
+
+</resources>
